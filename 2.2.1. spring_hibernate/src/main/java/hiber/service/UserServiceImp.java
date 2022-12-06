@@ -7,8 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.Query;
-import javax.persistence.TypedQuery;
 import java.util.List;
 
 @Service
@@ -40,9 +38,10 @@ public class UserServiceImp implements UserService {
    public List<Car> listCars() {
       return userDao.listCars();
    }
+
    @Transactional
    @Override
-   public List<User> getUserByCar() {
-      return userDao.getUserByCar();
+   public List<User> getUserByCar(String model, int series) {
+      return userDao.getUserByCar(model, series);
    }
 }

@@ -24,7 +24,9 @@ public class User {
    @JoinColumn(name = "series")
    private Car userCar;
 
-   
+   public User() {
+   }
+
    public User(String firstName, String lastName, String email) {
       this.firstName = firstName;
       this.lastName = lastName;

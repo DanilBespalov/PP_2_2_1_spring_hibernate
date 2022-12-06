@@ -10,7 +10,7 @@ public class Car {
     private String model;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "series")
     private int series;
 

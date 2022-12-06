@@ -23,6 +23,9 @@ public class MainApp {
 
       userService.add(new Car("model1", 2222));
 
+
+
+
       List<User> users = userService.listUsers();
       for (User user : users) {
          System.out.println("Id = "+user.getId());
